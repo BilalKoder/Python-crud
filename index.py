@@ -61,7 +61,13 @@ hashed = bcrypt.hashpw(password, salt)
 #   print(x)
 
 
-sql = "UPDATE users SET name = 'Ali' WHERE id = 1"
+# sql = "UPDATE users SET name = 'Ali' WHERE id = 1"
+
+# mycursor.execute(sql)
+
+# mydb.commit()
+
+sql = "DELETE FROM users WHERE id = 1"
 
 mycursor.execute(sql)
 
